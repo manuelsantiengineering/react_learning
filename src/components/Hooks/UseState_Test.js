@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import "bootstrap/dist/css/bootstrap-grid.min.css";
+
 
 class UseState_Test extends React.Component {
 
@@ -16,14 +18,20 @@ class UseState_Test extends React.Component {
 const InputElement = () => {
     const [inputText, setInputText] = useState("");
     return(
-        <div>
-            <input
-                onChange={ (event) =>{
-                    setInputText(event.target.value)
-                }}
-                placeholder="Enter Some text here"
-            /><br/>
-            {inputText}
+        <div className="container">
+            <div className="row">
+                <div className="col-md-6">
+                    <input
+                        onChange={ (event) =>{
+                            setInputText(event.target.value)
+                        }}
+                        placeholder="Enter Some text here"
+                    /><br/>
+                </div>
+                <div className="col-md-6">
+                    {inputText}
+                </div>
+            </div>
         </div>
     );
 }
