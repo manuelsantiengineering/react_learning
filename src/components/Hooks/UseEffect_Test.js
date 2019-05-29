@@ -7,7 +7,7 @@ class UseEffect_Test extends React.Component {
     render() {
         return(
             <div>
-                <h3> Hooks: useEffect Example </h3>
+                <h4> Hooks: useEffect Example </h4>
                 <p>Should be called: "Used component did and will un-mount"</p>
                 <p>Gives us a clean way to set things (Usually state) when components start and finish</p>
                 <ImageToggleOnScroll

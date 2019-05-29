@@ -6,6 +6,7 @@ import UseState_Test from "./components/Hooks/UseState_Test"
 import UseRef_Test from "./components/Hooks/UseRef_Test"
 import UseEffect_Test from "./components/Hooks/UseEffect_Test"
 import Board from "./components/Board";
+import HookRules from "./components/Hooks/HookRules";
 
 
 
@@ -90,28 +91,31 @@ class Game extends React.Component {
 
         return (
             <div>
-            <h3>Basic React Game</h3>
-            <div className="game">
-            <div className="game-board">
+                <div>
+                    <h3>Basic React Game</h3>
+                    <div className="game">
+                    <div className="game-board">
 
-            <Board
-                squares={current.squares}
-                onClick={(i) => this.handleClick(i) }
-            />
-            </div>
-            <div className="game-info">
-                <div>{ status }</div>
-                <ol>{ moves }</ol>
-            </div>
-            </div>
-            <div className="hook-tests">
+                    <Board
+                        squares={current.squares}
+                        onClick={(i) => this.handleClick(i) }
+                    />
+                    </div>
+                    <div className="game-info">
+                        <div>{ status }</div>
+                        <ol>{ moves }</ol>
+                    </div>
+                    </div>
+                </div>
                 <br/>
-                <UseState_Test/>
-                <br/>
-                <UseRef_Test/>
-                <br/>
-                <UseEffect_Test/>
-            </div>
+                <div className="hook-tests">
+                    <HookRules/>
+                    <UseState_Test/>
+                    <br/>
+                    <UseRef_Test/>
+                    <br/>
+                    <UseEffect_Test/>
+                </div>
             </div>
 
     );

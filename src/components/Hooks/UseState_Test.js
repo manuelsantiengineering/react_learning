@@ -5,7 +5,7 @@ class UseState_Test extends React.Component {
     render() {
         return(
             <div>
-                <h3> Hooks: useState Example </h3>
+                <h4> Hooks: useState Example </h4>
                 <p>Lets us track state</p>
                 <InputElement/>
             </div>
