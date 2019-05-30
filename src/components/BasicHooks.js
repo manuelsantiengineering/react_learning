@@ -1,10 +1,11 @@
 import React from 'react';
 
-import HookRules from "./Hooks/HookRules";
-import UseState_Test from "./Hooks/UseState_Test";
-import UseRef_Test from "./Hooks/UseRef_Test";
-import UseEffect_Test from "./Hooks/UseEffect_Test";
-import UseContext_Test from "./Hooks/UseContext_Test";
+import HookRules from "./HookComponents/HookRules";
+import UseState_Test from "./HookComponents/UseState_Test";
+import UseRef_Test from "./HookComponents/UseRef_Test";
+import UseEffect_Test from "./HookComponents/UseEffect_Test";
+import UseContext_Test from "./HookComponents/UseContext_Test";
+import UseReducer_Test from "./HookComponents/UseReducer_Test"
 
 export const ConfigContext = React.createContext();
 
@@ -26,6 +27,8 @@ const BasicHooks = () => {
             <ConfigContext.Provider value={configValue}>
                 <UseContext_Test/>
             </ConfigContext.Provider>
+            <br/>
+            <UseReducer_Test/>
         </div>
     );
 }
