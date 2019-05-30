@@ -1,4 +1,5 @@
 import React, {useReducer} from 'react';
+import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/css/bootstrap-grid.min.css";
 
 import checkboxReducer from "../../reducers/checkboxReducer"
@@ -14,8 +15,11 @@ const UseReducer_Test = () => {
                 <p>(previousState, action) => newState </p>
             </div>
             <div className="row">
-                <CheckboxList />
+                <div className="col-md-10">
+                    <CheckboxList />
+                </div>
             </div>
+            <br/>
         </div>
     );
 }
@@ -44,20 +48,22 @@ const CheckboxList = () => {
     }
 
     return(
-        <ul className="list-group">
-            {checkboxList.map( (checkbox) => (
-                <li className="list-group-item" key={checkbox.id}>
-                    <label>
-                        <input
-                            type="checkbox"
-                            checked={checkbox.complete}
-                            onChange={() => handleChange(checkbox)}
-                        />
-                        {checkbox.task}
-                    </label>
-                </li>
-            ))}
-        </ul>
+        <div className="container">
+                <ul className="list-group">
+                    {checkboxList.map( (checkbox) => (
+                        <li className="list-group-item" key={checkbox.id}>
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    checked={checkbox.complete}
+                                    onChange={() => handleChange(checkbox)}
+                                />
+                                {checkbox.task}
+                            </label>
+                        </li>
+                    ))}
+                </ul>
+        </div>
     );
 }
 
