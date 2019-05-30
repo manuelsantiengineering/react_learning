@@ -10,7 +10,7 @@ const ImageToggleOnScroll = ({primaryImg, secondaryImg}) => {
         setInView(isInView());
         setIsLoading(false);
         return(() => {
-            window.addEventListener("scroll", scrollHandler);
+            window.removeEventListener("scroll", scrollHandler);
         });
     }, [isLoading]);
 

@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap-grid.min.css";
 import "bootstrap/dist/css/bootstrap.min.css"
 import Game from "./components/Game/Game";
 import BasicHooks from "./components/BasicHooks";
-import PresentationCard from "./components/Other/PresentationCard"
+// import PresentationCard from "./components/Other/PresentationCard";
 
 class App extends React.Component {
     render(){
@@ -11,7 +11,7 @@ class App extends React.Component {
             <div className="container">
                 <div className="row">
                     <div className="col-md-4">
-                        <PresentationCard/>
+                        {/*<PresentationCard/>*/}
                         <br/>
                         <Game/>
                     </div>
