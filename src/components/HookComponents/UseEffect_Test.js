@@ -1,8 +1,8 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import ImageToggleOnScroll from './ImageToggleOnScroll';
 
 
-class UseEffect_Test extends React.Component {
+class UseEffectTest extends React.Component {
 
     render() {
         return(
@@ -20,4 +20,4 @@ class UseEffect_Test extends React.Component {
     }
 }
 
-export default UseEffect_Test;
+export default UseEffectTest;

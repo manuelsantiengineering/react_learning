@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 
 import {ConfigContext} from "../BasicHooks";
 
-const UseContext_Test = () =>{
+const UseContextTest = () =>{
 
     const context = useContext(ConfigContext);
 
@@ -28,4 +28,4 @@ const UseContext_Test = () =>{
     );
 }
 
-export default UseContext_Test;
+export default UseContextTest;

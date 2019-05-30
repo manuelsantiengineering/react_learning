@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import "bootstrap/dist/css/bootstrap-grid.min.css";
 
 
-class UseState_Test extends React.Component {
+class UseStateTest extends React.Component {
 
     render() {
         return(
@@ -36,4 +36,4 @@ const InputElement = () => {
     );
 }
 
-export default UseState_Test;
+export default UseStateTest;
