@@ -4,17 +4,6 @@ import "bootstrap/dist/css/bootstrap-grid.min.css";
 import checkboxReducer from "../../reducers/checkboxReducer"
 
 const UseReducer_Test = () => {
-    // (previousState, action) => newState
-    const [checkboxList, dispatch] = useReducer(checkboxReducer, []);
-
-    const checkboxHandler = (event, checkboxValue) => {
-        event.preventDefault();
-        // const sessionId = parseInt(event.target.attributes["data-sessionid"].value);
-        // dispatch({
-        //     type: checkboxValue === true ? "check" : "uncheck",
-        //     sessionId
-        // });
-    }
 
     const initialCheckboxes = [
         {
@@ -28,6 +17,15 @@ const UseReducer_Test = () => {
             complete: false,
         },
     ];
+    //(previousState, action) => newState
+    const [checkboxList, dispatch] = useReducer(checkboxReducer, initialCheckboxes);
+
+    const handleChange = checkboxValue => {
+        dispatch({
+            type: checkboxValue.complete ? 'UNDO_CHECKMARK' : 'DO_CHECKMARK',
+            id: checkboxValue.id
+        });
+    }
 
 
     return(
@@ -39,13 +37,13 @@ const UseReducer_Test = () => {
             <div className="container">
                 <div className="row">
                     <ul className="list-group">
-                        {initialCheckboxes.map( (checkbox) => (
+                        {checkboxList.map( (checkbox) => (
                             <li className="list-group-item" key={checkbox.id}>
                                 <label>
                                     <input
                                         type="checkbox"
                                         checked={checkbox.complete}
-                                        onChange={checkboxHandler}
+                                        onChange={() => handleChange(checkbox)}
                                     />
                                     {checkbox.task}
                                 </label>

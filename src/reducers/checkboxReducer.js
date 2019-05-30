@@ -2,10 +2,10 @@
 const checkboxReducer = (state, action) => {
 
     switch (action.type) {
-        case "check":{
+        case "DO_CHECKMARK":{
             return updateCheckbox(true);
         }
-        case "uncheck":{
+        case "UNDO_CHECKMARK":{
             return updateCheckbox(false);
         }
         default:
@@ -14,13 +14,11 @@ const checkboxReducer = (state, action) => {
 
 
     function updateCheckbox(checkboxValue){
-        return state.map(
-            (item,index) => {
-                if(item.id === action.sessionId) {
-                    item.favorite = checkboxValue;
-                    return item;
+        return state.map((checkmark) => {
+                if(checkmark.id === action.id) {
+                    return {...checkmark, complete:checkboxValue};
                 }
-                return item;
+                return checkmark;
             } );
     }
 };

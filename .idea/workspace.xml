@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6bf53fb-9994-42fa-b548-2487a56f48ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/HookComponents/UseReducer_Test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/checkboxReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BasicHooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BasicHooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hooks/HookRules.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HookComponents/HookRules.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hooks/ImageToggleOnMouseOver.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HookComponents/ImageToggleOnMouseOver.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hooks/ImageToggleOnScroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HookComponents/ImageToggleOnScroll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hooks/UseContext_Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HookComponents/UseContext_Test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hooks/UseEffect_Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HookComponents/UseEffect_Test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hooks/UseRef_Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HookComponents/UseRef_Test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hooks/UseState_Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HookComponents/UseState_Test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HookComponents/UseReducer_Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HookComponents/UseReducer_Test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/checkboxReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/checkboxReducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/HookComponents/UseReducer_Test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="42" column="60" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
+              <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -100,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reducers/checkboxReducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="20" />
+            <state relative-caret-position="140">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -247,12 +238,12 @@
       <updated>1558534965050</updated>
       <workItem from="1558534966410" duration="6390000" />
       <workItem from="1558608551894" duration="10839000" />
-      <workItem from="1559046342189" duration="28541000" />
+      <workItem from="1559046342189" duration="29455000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45770000" />
+    <option name="totallyTimeSpent" value="46684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -409,13 +400,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/checkboxReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/HookComponents/UseRef_Test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -436,10 +420,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/checkboxReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/HookComponents/UseReducer_Test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="42" column="60" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
+          <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
